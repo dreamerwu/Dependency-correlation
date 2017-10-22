@@ -20,7 +20,8 @@ res=cor(data2)
 col=colorRampPalette(c("red","white","blue"))
 corrplot(res,type="full",order="hclust",diag=TRUE,number.cex=1.1,addCoef.col="black",col=col(100))
 res1=cor.mtest(data2,conf.level=.95)
-corrplot(res,p.mat=res1$p,insig="p-value",sig.level=-1,col=col(100)),type="full",order="hclust",diag=TRUE,number.cex=1.1,addCoef.col="black",col=col(100),)
+corrplot(res,p.mat=res1$p,insig="p-value",sig.level=-1,col=col(100))
+#,type="full",order="hclust",diag=TRUE,number.cex=1.1,addCoef.col="black",col=col(100))
 
 
 x=data2$TCAP
